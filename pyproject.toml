@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bandit"
+version = "0.0.1"
+authors = [
+    {name = "Daniel Kwon", email = "danielkwon02@gmail.com"},
+]
+description = "Utility functions for creating multi-armed bandits"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dan-kwon/bandit"
+"Bug Tracker" = "https://github.com/dan-kwon/bandit/issues"
