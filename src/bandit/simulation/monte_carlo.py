@@ -1,4 +1,4 @@
-def test_algorithm(algo, arms, n_iter, horizon):
+def test_algorithm(algo, arms, reward_values, n_iter, horizon):
     """
     Monte Carlo simulation used to test bandit algorithms with synthetic data
 
@@ -30,7 +30,7 @@ def test_algorithm(algo, arms, n_iter, horizon):
             chosen_arms[index] = chosen_arm
             
             # record reward from chosen arm at time t
-            reward = arms[chosen_arms[index]].draw()
+            reward = arms[chosen_arms[index]].draw() * rewards[chosen_arm]
             rewards[index] = reward
 
             # record cumulative rewards
