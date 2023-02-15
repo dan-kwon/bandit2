@@ -1,4 +1,4 @@
-def test_algorithm(algo, arms, reward_amounts, n_iter, horizon):
+def MonteCarloTest(algo, arms, reward_amounts, n_iter, horizon):
     """
     Monte Carlo simulation used to test bandit algorithms with synthetic data
 

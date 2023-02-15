@@ -1,12 +1,5 @@
 import random
 
-def ind_max(x):
-    """
-    returns the index that corresponds to the maximum value in array x
-    """
-    m = max(x)
-    return x.index(m)
-
 class EpsilonGreedy():
     """
     epsilon: percentage of time the bandit explores
